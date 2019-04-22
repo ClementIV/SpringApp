@@ -14,7 +14,8 @@ public class App {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("JDBCBeans.xml");
 
-        StudentJDBCTemplate studentJDBCTemplate = (StudentJDBCTemplate) context.getBean("studentJDBCTemplate");
+//        StudentJDBCTemplate studentJDBCTemplate = (StudentJDBCTemplate) context.getBean("studentJDBCTemplate");
+        StudentPro studentJDBCTemplate = (StudentPro) context.getBean("studentPro");
 
         System.out.println("------Records Creation ----------");
         studentJDBCTemplate.create("Zara",11);

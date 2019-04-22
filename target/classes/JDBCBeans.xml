@@ -15,4 +15,9 @@
     <bean id = "studentJDBCTemplate" class="springAopXml.StudentJDBCTemplate">
         <property name="dataSource" ref = "dataSource"/>
     </bean>
+
+    <!--Definition for studentPro bean-->
+    <bean id="studentPro" class="springAopXml.StudentPro">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
 </beans>
